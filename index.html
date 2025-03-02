@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="./vue.global.js"></script>
+  <div id="app">
+    Counter: {{ counter }}
+  </div>
+  <script>
+    const Counter = {
+      data() {
+        return {
+          counter: 0
+        }
+      }
+    }
+    const app = Vue.createApp(Counter)
+    app.mount('#app')
+  </script>
+
+
+</body>
+
+</html>
